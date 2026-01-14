@@ -13,6 +13,7 @@ Dự án demo pipeline phát sinh giao dịch qua Kafka, xử lý với Spark ML
 - `docker-compose.yml` - khởi Cassandra, Zookeeper, Kafka cho môi trường local.
 - `requirements.txt` - thư viện Python cần cài
 
+Dataset link - https://www.kaggle.com/datasets/kartik2112/fraud-detection
 ---
 
 ## Yêu cầu (Prerequisites) ✅
