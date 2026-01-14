@@ -121,9 +121,7 @@ Truy cập: http://localhost:8501
 ```toml
 ADMIN_PASSWORD = "admin"
 ```
-Hoặc set biến môi trường `STREAMLIT_ADMIN_PASSWORD`.
 
----
 
 ## Kiểm tra & Troubleshooting ⚠️
 - Kiểm tra container:
@@ -141,17 +139,6 @@ docker exec -it cassandra cqlsh -e "USE bigdata; SELECT count(*) FROM transactio
 - Nếu Streamlit không nhận data: đảm bảo `fraud_detection` notebook/script đang chạy và đã insert dữ liệu vào Cassandra.
 - Nếu Spark không load model: kiểm tra `model/` có tồn tại và tương thích với phiên bản PySpark.
 
----
 
-## Gợi ý nâng cao / Next steps ✨
-- Tự động chuyển `fraud_detection.ipynb` sang script `consumer.py` để chạy non-interactive (yêu cầu wrap các cells thành một file). Nếu bạn muốn, tôi có thể tạo `consumer.py` cho bạn.
-- Thêm `.env.example` và script systemd / supervisor để chạy producer/consumer như service.
 
----
-
-Nếu bạn muốn, tôi có thể:
-- tạo file `consumer.py` tương đương với `fraud_detection.ipynb`, hoặc
-- thêm `.streamlit/secrets.toml.example` và `.env.example` mẫu.
-
-Chỉ cần cho biết bạn muốn tiếp tục tính năng nào nhé.
 # credit_fraud_detection
