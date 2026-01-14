@@ -11,7 +11,7 @@ Dự án demo pipeline phát sinh giao dịch qua Kafka, xử lý với Spark ML
 - `model/` - model Spark (được lưu bởi notebook `model_training.ipynb`).
 - `encoders/` - encoder pickle từ bước tiền xử lý.
 - `docker-compose.yml` - khởi Cassandra, Zookeeper, Kafka cho môi trường local.
-- `requirements.txt` - thư viện Python cần cài (tôi đã thêm file này).
+- `requirements.txt` - thư viện Python cần cài
 
 ---
 
